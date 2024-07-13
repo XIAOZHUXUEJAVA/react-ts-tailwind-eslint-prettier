@@ -1,10 +1,10 @@
-import Hello from './components/Hello'
+import GithubProfileFinder from './components/GithubProfileFinder'
 
 function App() {
   return (
     <>
       <div>
-        <Hello></Hello>
+        <GithubProfileFinder />
       </div>
     </>
   )
