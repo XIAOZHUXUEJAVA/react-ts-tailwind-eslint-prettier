@@ -1,10 +1,13 @@
-import GithubProfileFinder from './components/GithubProfileFinder'
+import Home from './pages/Home'
+import UserProfile from './pages/UserProfile'
 
-function App() {
+const App: React.FC = () => {
+  const userId: string = '5'
   return (
     <>
       <div>
-        <GithubProfileFinder />
+        <Home></Home>
+        <UserProfile userId={userId}></UserProfile>
       </div>
     </>
   )

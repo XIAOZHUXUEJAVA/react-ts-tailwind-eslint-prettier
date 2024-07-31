@@ -3,7 +3,6 @@ import { UserData } from './UserData'
 interface UserProps {
   user: UserData
 }
-
 const User: React.FC<UserProps> = ({ user }) => {
   return (
     <>
