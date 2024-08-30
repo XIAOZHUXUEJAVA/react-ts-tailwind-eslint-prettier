@@ -10,12 +10,12 @@ export const fetchData = async <T>(endpoint: string): Promise<ApiResponse<T>> =>
   try {
     // Sends a GET request to the specified endpoint and expects a response of type T
     const response = await apiClient.get<T>(endpoint)
-    // Destructures the response object to extract data, status, and statusText
+    // Destructure the response object to extract data, status, and statusText
     const { data, status, statusText } = response
     // Constructs a result object of type 'ApiResponse<T>'
     const result: ApiResponse<T> = { data, status, statusText }
     // If the status is 200 (OK), return the result
-    if (status === 200) {
+    if (200 === status) {
       return result
     } else {
       // If the status is not 200, throw an error with the statusText
